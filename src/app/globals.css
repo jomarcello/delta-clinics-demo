@@ -16,10 +16,49 @@
   --foreground: #1f2937;
   --muted: #6b7280;
   --border: #e5e7eb;
+}
+
+/* CRITICAL FIX: Force body styling with !important */
+@layer base {
+  html {
+    @apply antialiased;
+  }
   
-  /* Fonts */
-  --font-geist-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-geist-mono: 'Fira Code', 'Monaco', 'Consolas', 'Courier New', monospace;
+  body {
+    @apply bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100 text-gray-900 !important;
+    background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 50%, #eff6ff 100%) !important;
+    color: #1f2937 !important;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white shadow-sm focus:ring-blue-500;
+  }
+  
+  .service-card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border border-gray-100;
+  }
+  
+  .demo-button {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+  }
+}
+
+/* Force CSS rebuild - Railway deployment fix */
+.css-rebuild-force {
+  content: "v2025-08-07-FINAL";
+}
+
+/* Force ALL Tailwind utilities to load */
+.railway-css-fix {
+  @apply bg-white text-gray-900 p-4 rounded-lg shadow-lg;
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+  @apply bg-gradient-to-r from-blue-600 to-indigo-600;
+  @apply shadow-md hover:shadow-lg transition-all duration-300;
+  @apply rounded-xl border border-gray-200;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
 
 @media (prefers-color-scheme: dark) {
