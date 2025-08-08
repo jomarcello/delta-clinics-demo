@@ -43,7 +43,7 @@ export const practiceConfigs: Record<string, PracticeConfig> = {
   'delta-clinics': {
     id: 'delta-clinics',
     name: 'Delta Clinics',
-    doctor: 'Mr Hazem Alfie, MBBCh, MSc, FRCS',
+    doctor: 'Mr Hazem Alfie',
     location: '96 Harley Street, London, W1G 7HY',
     agentId: 'agent_01k0a57qgte4k8yrmt4tbm9s60',
     type: 'beauty' as const,
