@@ -43,8 +43,8 @@ export const practiceConfigs: Record<string, PracticeConfig> = {
   'delta-clinics': {
     id: 'delta-clinics',
     name: 'Delta Clinics',
-    doctor: 'Mr. Stewart Andrew Ewen, FRCS',
-    location: '13a Harley Street, London, W1G 9QG',
+    doctor: 'Mr Hazem Alfie, MBBCh, MSc, FRCS',
+    location: '96 Harley Street, London, W1G 7HY',
     agentId: 'agent_01k0a57qgte4k8yrmt4tbm9s60',
     type: 'beauty' as const,
     port: 3000,
@@ -52,8 +52,8 @@ export const practiceConfigs: Record<string, PracticeConfig> = {
     
     chat: {
       assistantName: 'Robin',
-      initialMessage: 'Thank you for contacting Delta Clinics! I am Robin, your facial surgery assistant. I can help you schedule consultations with Mr. Stewart Andrew Ewen for facial plastic surgery procedures. Which service interests you today?',
-      systemPrompt: `You are Robin, the scheduling assistant at Delta Clinics on Harley Street, London. Help patients schedule consultations with Mr. Stewart Andrew Ewen, FRCS for facial plastic surgery procedures.`
+      initialMessage: 'Thank you for contacting Delta Clinics! I am Robin, your facial surgery assistant. I can help you schedule consultations with Mr Hazem Alfie for facial plastic surgery procedures. Which service interests you today?',
+      systemPrompt: `You are Robin, the scheduling assistant at Delta Clinics on Harley Street, London. Help patients schedule consultations with Mr Hazem Alfie, FRCS for facial plastic surgery procedures.`
     },
     
     voice: {
