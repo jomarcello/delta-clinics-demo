@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   },
   // CRITICAL FIX: Force CSS cache bypass for Railway deployment
   generateBuildId: async () => {
-    return `build-${Date.now()}-css-fix`
+    return `delta-clinics-${Date.now()}-branding-fix`
   },
   // Remove problematic optimizeCss that causes Railway build failures
   // Ensure all CSS is generated for production
