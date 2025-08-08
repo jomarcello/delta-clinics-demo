@@ -45,7 +45,7 @@ export const practiceConfigs: Record<string, PracticeConfig> = {
     name: 'Delta Clinics',
     doctor: 'Mr Hazem Alfie',
     location: '96 Harley Street, London, W1G 7HY',
-    agentId: 'agent_01k0a57qgte4k8yrmt4tbm9s60',
+    agentId: 'agent_3601k25hr0y4eagtnna6qe6rrpq1', // Delta Clinics - Mr Hazem Alfie
     type: 'beauty' as const,
     port: 3000,
     subdomain: 'delta-clinics',
