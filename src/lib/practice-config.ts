@@ -57,7 +57,7 @@ export const practiceConfigs: Record<string, PracticeConfig> = {
     },
     
     voice: {
-      firstMessage: 'Thank you for calling Delta Clinics! This is Robin, your facial surgery assistant. How can I help you today?'
+      firstMessage: 'Thank you for calling Delta Clinics! This is Robin, your facial surgery assistant. I can help you schedule consultations with Mr Hazem Alfie for facial plastic surgery procedures. How can I help you today?'
     },
     
     services: [
